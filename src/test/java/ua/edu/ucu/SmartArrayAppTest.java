@@ -34,7 +34,7 @@ public class SmartArrayAppTest {
         String[] studentNames = 
                 SmartArrayApp.findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(students);
         String[] expectedStudentNames = {"Borek Tomasz", "Kranga Antons", "Sutter Burr"};
-
+        System.out.println(studentNames);
         assertArrayEquals(expectedStudentNames, studentNames);
     }
 }
