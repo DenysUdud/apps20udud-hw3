@@ -1,6 +1,9 @@
 package ua.edu.ucu;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 /**
@@ -34,7 +37,7 @@ public class SmartArrayAppTest {
         String[] studentNames = 
                 SmartArrayApp.findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(students);
         String[] expectedStudentNames = {"Borek Tomasz", "Kranga Antons", "Sutter Burr"};
-        System.out.println(studentNames);
+        System.out.println(Arrays.toString(studentNames));
         assertArrayEquals(expectedStudentNames, studentNames);
     }
 }
